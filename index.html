@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Library</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script type="module" crossorigin src="/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <img src="" alt="The Library" width="42" height="42" />
+        <div>
+          <div class="header__title">The Library</div>
+          <div class="header__subtitle">Discover your next favorite book</div>
+        </div>
+      </div>
+
+      <!-- кнопка переключения темы -->
+  <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+    <img id="theme-icon" src="" alt="" width="24" height="24" />
+  </button>
+
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="hero">
+      <h1>Discover Your Next Great Read</h1>
+      <p>Search millions of books, build your personal library, and never lose track of what to read next.</p>
+    </section>
+
+    <div class="search-bar">
+      <div class="search-bar__field">
+        <img id="search-icon" alt="" width="16" height="16" class="search-bar__icon" />
+        <input type="text" id="search-input" placeholder="Search for books by title or author..." />
+      </div>
+      <input 
+        type="text" 
+        id="author-filter" 
+        class="search-bar__filter"
+        placeholder="Filter by author..." 
+      />
+      <button id="search-btn">Search</button>
+    </div>
+
+    <div class="content-row">
+      <div class="content-left">
+        <div id="status-message" class="status-message hidden"></div>
+        <div id="books-grid" class="books-grid"></div>
+      </div>
+
+      <aside class="favorites-panel">
+        <div class="favorites-panel__header">
+          <div class="favorites-panel__title">
+            <img src="" alt="" width="37" height="37" />
+            <div>
+              <h2>Favorites</h2>
+              <p class="favorites-count" id="favorites-count">0 books saved</p>
+            </div>
+          </div>
+        </div>
+        <div id="favorites-list" class="favorites-list"></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">Powered by <a href="https://openlibrary.org" target="_blank">Open Library</a></footer>
+
+</body>
+</html>
