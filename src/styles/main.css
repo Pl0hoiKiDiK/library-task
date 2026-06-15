@@ -26,8 +26,6 @@
 [data-theme="dark"] {
   --color-bg: #1a1a1a;
   --color-surface: #242424;
-  --color-primary: #4caf72;
-  --color-primary-hover: #3d9960;
   --color-text: #e8e8e8;
   --color-text-muted: #a0a0a0;
   --color-text-faint: #666666;
