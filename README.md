@@ -54,26 +54,28 @@ npm run preview
 
 ## Project Structure
 
+```
 book-catalog/
-├── index.html # Entry point — app markup and layout
-├── vite.config.js # Vite bundler configuration
-├── package.json # Project dependencies and npm scripts
-├── public/ # Static files copied as-is to dist/
+├── index.html
+├── vite.config.js
+├── package.json
+├── public/
 │ └── favicon.svg
-└── src/ # Application source code
-├── main.js # Entry point — initialization and event listeners
-├── api/ # API layer — communication with Open Library
+└── src/
+├── main.js
+├── api/
 │ └── openLibrary.js
-├── components/ # UI components — DOM builders for cards and panels
+├── components/
 │ ├── bookCard.js
 │ ├── favorites.js
 │ └── loader.js
-├── styles/ # CSS stylesheets — variables, layout, components
+├── styles/
 │ └── main.css
-└── utils/ # Utility helpers
-├── debounce.js # Debounce function for search and filter inputs
-├── storage.js # localStorage wrapper for favorites
-└── theme.js # Theme persistence helpers
+└── utils/
+├── debounce.js
+├── storage.js
+└── theme.js
+```
 
 ## API
 
